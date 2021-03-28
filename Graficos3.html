@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+
+    <div class="container">
+        <h1>Diferentes Cuadarados</h1>
+        <p>I'm using git oh yea </p>
+        <h3>Help me please</h3>
+        <h1>Virginia CP UwU</h1>
+
+    </div>
+    <style>
+        .container {
+            background-color: aqua;
+            text-align: center;
+            border-radius: 10px;
+            width: 100%;
+            height: auto;
+            border: black;
+            color: violet;
+        }
+    </style>
+
+
+
+    <div class="cabecera">
+        <h1>Cabecera desde esta rama</h1>
+    </div>
+    <style>
+        .cabecera {
+            background-color: yellow;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            color: blue;
+            text-align: center;
+            text-shadow: 4px;
+        }
+    </style>
+
+    <script type="application/javascript">
+        const dibuja = () => {
+            var canvas = document.getElementById("canvas");
+            if (canvas.getContext) {
+                var context = canvas.getContext("2d");
+
+                //cuadro1
+                context.fillStyle = "rgb(100, 30, 150, 200)";
+                context.fillRect(250, 0, 30, 30); //En rgb el ùltimo componente es canal alfa 
+
+                //cuadro2
+                context.fillStyle = "rgb(100, 30, 201, 200)";
+                context.fillRect(200, 50, 40, 40);
+
+                //cuadro3
+                context.fillStyle = "rgb(100, 40, 300, 200)";
+                context.fillRect(100, 100, 80, 80);
+
+                //cuadro4
+                context.fillStyle = "rgb(200, 40, 400, 200)";
+                context.fillRect(1, 190, 120, 120);
+
+                //cuadro5 con esto
+                context.fillStyle = "rgba(100, 40, 400, 200)";
+                context.fillRect(200, 100, 160, 210);
+                //(Recorrer hacia la derecha,recorrer hacia abajo,tamaño del ancho, tamaño del largo)
+
+
+
+
+            }
+        }
+    </script>
+</head>
+
+<body onload="dibuja()">
+    <canvas id="canvas" width="600px" height="600px" style="border:1px">
+
+	</canvas>
+
+
+</body>
+
+</html>
